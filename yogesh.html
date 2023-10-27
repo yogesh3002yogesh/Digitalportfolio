@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yogeshwaran k- Portfolio </title>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color:#E64C17; 
+            }
+            header
+            {
+            background-color:#E8E51E ;
+            color:#b817d8a8;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            }
+            .header-content h1
+            {
+            
+font-size:2.5rem;
+            }
+            .profile-picture
+            {
+                width: 100px;
+                height:100px;
+                border-radius: :75%;
+                object-fit:cover;
+                position:absolute;
+                top:75px;
+                left:75px;
+            }
+            nav{
+                background-color: rgba(1, 21, 22, 0.89);
+                color: aliceblue;
+                text-align: cnter;
+            }
+            nav ul
+            {
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li{
+                display:inline;
+                margin:0 20 px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:aliceblue;
+            }
+            .section-content
+            {
+                background-color: antiquewhite;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .download-button
+            {
+                background-color: bisque;
+                color:black;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top:10px;
+            }
+ .download-button:hover
+ {
+    background-color: darkblue;
+ }
+ footer
+ {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: beige;
+ }
+ u1
+ {
+    list-style-type: disc;
+    padding-left: 20px;
+ }
+ 
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="yogesh.jpeg" alt="your profile picture" class="profile-picture">
+                <h1>Yogeshwaran k</h1>
+                <p> Student </p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+</ul>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2> About Me</h2>
+                <p> Hello Everyone ! Yogeshwaran k</p>
+            </div>
+        </section>
+        <section id="education">
+            <div class="section-content">
+                <h2>B.Sc</h2>
+                <p>Alagappa University</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>c</li>
+                    <li> cpp</li>
+                    <li>java</li>           
+               </ul>
+            </div>
+
+        </section>
+        <section id="resume">
+            <center>
+                <div class="download-button">
+                    <a href="yogesh.docx" target="_blank">RESUME</a>
+                </div>
+            </center>
+        </section>
+        <footer>
+            <p>
+                &copy; 2023 Yogeshwaran k
+            </p>
+        </footer>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>
+            {anchor.addEventListener('click',function(e)
+        {
+            e.preventDefault();
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=document.getElementById(targetId);
+            if(targetElement)
+            {
+                window.scrollTo(
+                    {
+                        top:targetElement.offsetTop,
+                        behavior:'smooth';
+                                        }
+                );
+            }
+        });
+    });
+        </script>
+    
+
+    </body>
+</html>
